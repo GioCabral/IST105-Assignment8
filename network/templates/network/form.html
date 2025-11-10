@@ -1,0 +1,7 @@
+<h1>DHCP Request</h1>
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+<a href="/leases/">View Leases</a>

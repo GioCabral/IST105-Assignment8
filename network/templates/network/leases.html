@@ -1,0 +1,16 @@
+<h2>All Leases</h2>
+<table border="1">
+  <tr>
+    <th>MAC</th><th>DHCP</th><th>IP</th><th>Lease</th><th>Time</th>
+  </tr>
+  {% for item in records %}
+  <tr>
+    <td>{{ item.mac_address }}</td>
+    <td>{{ item.dhcp_version }}</td>
+    <td>{{ item.assigned_ip }}</td>
+    <td>{{ item.lease_time }}</td>
+    <td>{{ item.timestamp }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<a href="/">Back</a>

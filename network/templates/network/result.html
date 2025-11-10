@@ -1,0 +1,10 @@
+{% if error %}
+  <h3 style="color:red">{{ error }}</h3>
+{% else %}
+  <h2>Lease Created</h2>
+  <p><b>MAC:</b> {{ record.mac_address }}</p>
+  <p><b>DHCP:</b> {{ record.dhcp_version }}</p>
+  <p><b>IP:</b> {{ record.assigned_ip }}</p>
+  <p><b>Lease Time:</b> {{ record.lease_time }}</p>
+{% endif %}
+<a href="/">Back</a>
