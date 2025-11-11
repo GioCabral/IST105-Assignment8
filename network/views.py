@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .forms import NetworkForm
 import re, random, datetime, pymongo
 
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+client = pymongo.MongoClient("mongodb://172.31.88.168:27017/")
 db = client["networkdb"]
 leases = db["leases"]
 
